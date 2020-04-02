@@ -49,7 +49,7 @@ document.onreadystatechange = function () {
 }
 
 function OpenPrivacy() {
-    window.open("pp"+"html", '_blank');
+    window.open(pp+".html", '_blank');
     
 }
 
@@ -123,7 +123,7 @@ function BoxDetail() {
 function CloseDetail() {
     document.getElementById("download").style.opacity = 1;
     detailPanel.style.top = "-300%";
-    setTimeout(function() {HideDetail();}, 1000);
+    setTimeout(function() {HideDetail();}, 200);
 }
 
 function HideDetail() {
