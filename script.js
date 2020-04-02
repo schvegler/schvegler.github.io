@@ -73,6 +73,7 @@ function GetBoxPhotos() {
 }
 
  function scrollToTop() { 
+     detailPanel.style.height="auto";
      var timerHandle = setInterval(function() {
          if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) 
              window.scrollBy(0,-30); 
@@ -122,6 +123,11 @@ function BoxDetail() {
 function CloseDetail() {
     document.getElementById("download").style.opacity = 1;
     detailPanel.style.top = "-300%";
+    setTimeout(function() {HideDetail();}, 1000);
+}
+
+function HideDetail() {
+    detailPanel.style.height = 0;
 }
 
 
@@ -129,16 +135,18 @@ function OpenDownload() {
     document.getElementById("download").style.transition = "0.5s";
     document.getElementById("download").style.opacity = 0;
     closePanel.style.transition = "0.4s";
-    closePanel.style.transform = "rotate(720deg)";
-    downloadPanel.style.width = "100%"
+    closePanel.style.transform = "rotate(360deg)";
+    //downloadPanel.style.width = "100%"
+    downloadPanel.style.marginLeft = 0;
     closePanel.style.opacity = 1;
-    showDlIcon = setTimeout(ShowDownloadIcons, 500);
+    showDlIcon = setTimeout(ShowDownloadIcons, 300);
 }
 
 function CloseDownload() {
     document.getElementById("download").style.opacity = 1;
     closePanel.style.transform = "rotate(45deg)";
-    downloadPanel.style.width = "0px";
+    //downloadPanel.style.width = "0px";
+    downloadPanel.style.marginLeft = "-100%";
     closePanel.style.opacity = 0;
     HideDownloadIcons();
 }
