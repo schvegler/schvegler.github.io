@@ -49,7 +49,7 @@ document.onreadystatechange = function () {
 }
 
 function OpenPrivacy() {
-    window.open(pp+".html", '_blank');
+    window.open("https://zomigames.com/"+pp+".html", '_blank');
     
 }
 
