@@ -44,12 +44,18 @@ document.onreadystatechange = function () {
       GetBabyPhotos();
       GetSnakePhotos();
       GetBoxPhotos();
+      setTimeout(function() {DisableLoading();}, 1000);
       
   }
 }
 
+function DisableLoading() {
+    document.body.classList.remove("disableScroll")
+    document.getElementById("loading").style.display = "none";
+}
+
 function OpenPrivacy() {
-    window.open(pp+".html", '_blank');
+    window.open("https://zomigames.com/"+pp+".html", '_blank');
     
 }
 
