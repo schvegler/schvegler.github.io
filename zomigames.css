@@ -5,25 +5,17 @@ body {
     background-color: #0f0f0f;
 }
 
-.disableScroll {
-    height: 100%;
-    overflow: hidden;
-}
-
 #loading{
     width: 100%;
     height: 100%;
     max-width: 1080px;
-    position: absolute;
+    position: fixed;
+    overflow: visible;
     z-index: 1000;
     background-color: black;
     text-align: center;
-}
-
-#loading img {
-    margin-top: 20%;
-    width:150px;
-    height: 130px;
+    background: #000 url(loading.gif) no-repeat center;
+    background-size: 150px 120px;
 }
 
 .menu{

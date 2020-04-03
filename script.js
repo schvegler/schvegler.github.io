@@ -1,4 +1,4 @@
-
+var loader;
 var closePanel;
 var downloadPanel;
 var detailPanel;
@@ -16,16 +16,15 @@ var videos = [];
 var titles = ["Baby Chicks", "Classis Snake", "Hit The Box"];
 var descriptions = ["Children deserve fun games too, this is why baby chick was born. Controlling the chicken mom by tilting the device is fun just like car racing games, this combined with the 2d platformer aspect gives you a new style of gameplay. Collect all the baby chicks and bring them back to your nest.", "Classic Snake, the well known retro snake game with a new aspect, beautiful graphics, cool particle effects but the same gameplay mechanism.", "Proud to anounce, Hit the box 2.0 is released and available to iOS and Android for free. This was a major update, changed the whole graphic assets and sounds. Try it out now!", "The biggest project of Zomigames, an online top down shooter for iOS and Android. This game combines battle royale with and top down shooter with some RPG elements to give you a complex experience that newer gets boring. Still in early stage of development."];
 
-
-
-
 var titleDetail;
 var textDetail;
 
-document.onreadystatechange = function () {
-  var state = document.readyState
-  if (state == 'interactive') {
-      anim = document.getElementsByClassName("anim");
+document.addEventListener("DOMContentLoaded", function() {
+    loader = document.getElementById('loading');
+    window.setTimeout(function() {
+        loadNow(1)},500);
+
+    anim = document.getElementsByClassName("anim");
       img = document.getElementsByClassName("img");
       closePanel = document.getElementById("close-panel");
       downloadPanel = document.getElementById("download-panel") 
@@ -44,14 +43,21 @@ document.onreadystatechange = function () {
       GetBabyPhotos();
       GetSnakePhotos();
       GetBoxPhotos();
-      setTimeout(function() {DisableLoading();}, 1000);
-      
-  }
+})
+
+function loadNow(opacity) {
+    if (opacity <=0) {
+        displayContent();
+    } else {
+        loader.style.opacity = opacity;
+        window.setTimeout(function() {
+            loadNow(opacity - 0.05)
+        }, 10);
+    }
 }
 
-function DisableLoading() {
-    document.body.classList.remove("disableScroll")
-    document.getElementById("loading").style.display = "none";
+function displayContent() {
+    loader.style.display = 'none';
 }
 
 function OpenPrivacy() {
