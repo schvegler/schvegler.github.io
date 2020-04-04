@@ -2,7 +2,7 @@ body {
     max-width: 1080px;
     padding: 0;
     margin: auto;
-    background-color: #0f0f0f;
+    background-color: red;
 }
 
 .hidden {
