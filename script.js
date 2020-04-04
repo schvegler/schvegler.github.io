@@ -1,3 +1,4 @@
+var loadedImages = 0;
 var loader;
 var closePanel;
 var downloadPanel;
@@ -19,33 +20,35 @@ var descriptions = ["Children deserve fun games too, this is why baby chick was 
 var titleDetail;
 var textDetail;
 
+
 document.addEventListener("DOMContentLoaded", function() {
     loader = document.getElementById('loading');
-    loadNow(1);
+    setTimeout(function() {loadNow(1);}, 8000);
 
     anim = document.getElementsByClassName("anim");
-      img = document.getElementsByClassName("img");
-      closePanel = document.getElementById("close-panel");
-      downloadPanel = document.getElementById("download-panel") 
-      detailPanel = document.getElementById("detail-panel");
-      document.getElementById("privacy-link").addEventListener("click", OpenPrivacy);
-      document.getElementById("download").addEventListener("click", OpenDownload);
-      document.getElementById("close-detail").addEventListener("click", CloseDetail);
-      closePanel.addEventListener("click", CloseDownload);
-      document.getElementById("baby").addEventListener("click", BabyDetail);
-      document.getElementById("snake").addEventListener("click", SnakeDetail);
-      document.getElementById("box").addEventListener("click", BoxDetail);
-      zomiLogo = document.getElementById("logo");
-      titleDetail = document.getElementById("title");
-      textDetail = document.getElementById("text");
-      video = document.getElementById("video"); 
-      GetBabyPhotos();
-      GetSnakePhotos();
-      GetBoxPhotos();
+    img = document.getElementsByClassName("img");
+    closePanel = document.getElementById("close-panel");
+    downloadPanel = document.getElementById("download-panel") 
+    detailPanel = document.getElementById("detail-panel");
+    document.getElementById("privacy-link").addEventListener("click", OpenPrivacy);
+    document.getElementById("download").addEventListener("click", OpenDownload);
+    document.getElementById("close-detail").addEventListener("click", CloseDetail);
+    closePanel.addEventListener("click", CloseDownload);
+    document.getElementById("baby").addEventListener("click", BabyDetail);
+    document.getElementById("snake").addEventListener("click", SnakeDetail);
+    document.getElementById("box").addEventListener("click", BoxDetail);
+    zomiLogo = document.getElementById("logo");
+    titleDetail = document.getElementById("title");
+    textDetail = document.getElementById("text");
+    video = document.getElementById("video"); 
+    GetBabyPhotos();
+    GetSnakePhotos();
+    GetBoxPhotos();
 })
 
 function loadNow(opacity) {
-    if (opacity <=0) {
+
+        if (opacity <=0) {
         displayContent();
     } else {
         loader.style.opacity = opacity;
@@ -55,11 +58,19 @@ function loadNow(opacity) {
     }
 }
 
+
 function displayContent() {
     loader.style.display = 'none';
     var hiddenDiv = document.getElementsByClassName("hidden");
     for (i = 0; i<hiddenDiv.length; i++) {
         hiddenDiv[i].style.display = "block";
+    }
+}
+
+function ImageReady() {
+    loadedImages++;
+    if (loadedImages >=7) {
+            loadNow(1);
     }
 }
 
