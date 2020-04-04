@@ -16,9 +16,9 @@ body {
     position: fixed;
     overflow: visible;
     z-index: 1000;
-    background-color: black;
     text-align: center;
     background: #000 url(loading.gif) no-repeat center;
+    background-color: white;
     background-size: 150px 120px;
 }
 
