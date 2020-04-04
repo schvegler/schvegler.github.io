@@ -6,17 +6,15 @@
         <title>Zomigames</title>
         <script src="script.js"></script>
         <link rel="stylesheet" href="zomigames.css">
+        <div id="loading">
+            <div></div>
+        </div>
     </head>
     
     
     
     <body>
-        
-        <div id="loading">
-            <div></div>
-        </div>
-        
-        <div class="menu">
+        <div class="menu hidden">
             <img src="TopMenu.png">
             <div id="menu-list">
                 <div class="title">
@@ -58,7 +56,6 @@
             
             
         </div>
-        
         
         <div id="download-panel">
             <div id="close-panel">
@@ -111,7 +108,8 @@
                 </div>
             </div>
         </div>
-        <div class="main-container">
+        
+        <div class="main-container hidden">
             
         <div id="baby" class="baby">
             <img src="BabyChicksImage.png">
@@ -127,7 +125,7 @@
  
     </body>
 
-<footer>
+<footer class="hidden">
     <img src="BottomMenu.png">
     <p class="text1">Zomigames is a solo-dev game studio, creating fun and quality mobile games for iOS</p>
     <p class="text2">Contact: tamas.schvegler@gmail.com</p>

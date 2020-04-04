@@ -58,6 +58,10 @@ function loadNow(opacity) {
 
 function displayContent() {
     loader.style.display = 'none';
+    var hiddenDiv = document.getElementsByClassName("hidden");
+    for (i = 0; i<hiddenDiv.length; i++) {
+        hiddenDiv[i].style.display = "block";
+    }
 }
 
 function OpenPrivacy() {

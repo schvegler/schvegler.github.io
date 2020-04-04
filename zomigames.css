@@ -5,6 +5,10 @@ body {
     background-color: #0f0f0f;
 }
 
+.hidden {
+    display: none;
+}
+
 #loading{
     width: 100%;
     height: 100%;
