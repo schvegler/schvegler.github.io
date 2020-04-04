@@ -21,8 +21,7 @@ var textDetail;
 
 document.addEventListener("DOMContentLoaded", function() {
     loader = document.getElementById('loading');
-    window.setTimeout(function() {
-        loadNow(1)},500);
+    loadNow(1);
 
     anim = document.getElementsByClassName("anim");
       img = document.getElementsByClassName("img");
