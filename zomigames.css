@@ -16,7 +16,7 @@ body {
     position: fixed;
     overflow: visible;
     z-index: 1000;
-    background-color: black;
+    background-color: white;
     text-align: center;
 }
 
