@@ -16,12 +16,10 @@ body {
     position: fixed;
     overflow: visible;
     z-index: 1000;
-    background-color: white;
+    background-color: black;
     text-align: center;
-}
-
-#loading img {
-    margin-top: 200px;
+    background: #000 url(loading.gif) no-repeat center;
+    background-size: 150px 120px;
 }
 
 .menu{
