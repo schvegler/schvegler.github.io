@@ -18,8 +18,10 @@ body {
     z-index: 1000;
     background-color: black;
     text-align: center;
-    background: #000 url(loading.gif) no-repeat center;
-    background-size: 150px 120px;
+}
+
+#loading img {
+    margin-top: 200px;
 }
 
 .menu{
