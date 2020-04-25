@@ -7,7 +7,7 @@
     z-index: 1000;
     text-align: center;
     background: #000 url(loading.gif) no-repeat center !important;
-    background-size: 150px 120px !important;
+    background-size: 100px 90px !important;
 }
 
 body {
