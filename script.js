@@ -14,8 +14,8 @@ var photosSnake = new Array();
 var photosBox = new Array();
 var photoGroup = [photosBaby, photosSnake, photosBox];
 var videos = [];
-var titles = ["Baby Chicks", "Classis Snake", "Hit The Box"];
-var descriptions = ["Children deserve fun games too, this is why baby chick was born. Controlling the chicken mom by tilting the device is fun just like car racing games, this combined with the 2d platformer aspect gives you a new style of gameplay. Collect all the baby chicks and bring them back to your nest.", "Classic Snake, the well known retro snake game with a new aspect, beautiful graphics, cool particle effects but the same gameplay mechanism.", "Proud to anounce, Hit the box 2.0 is released and available on iOS for free. This was a major update, changed the whole graphic assets and sounds. Try it out now!", "The biggest project of Zomigames, an online top down shooter for iOS and Android. This game combines battle royale with and top down shooter with some RPG elements to give you a complex experience that newer gets boring. Still in early stage of development."];
+var titles = ["Feathery Fury", "Classis Snake", "Hit The Box"];
+var descriptions = ["Children deserve fun games too, this is why Feathery Fury was born. Controlling the chicken mom by tilting the device is fun just like car racing games, this combined with the 2d platformer aspect gives you a new style of gameplay. Collect all the baby chicks and bring them back to your nest.", "Classic Snake, the well known retro snake game with a new aspect, beautiful graphics, cool particle effects but the same gameplay mechanism.", "Proud to anounce, Hit the box 2.0 is released and available on iOS for free. This was a major update, changed the whole graphic assets and sounds. Try it out now!", "The biggest project of Zomigames, an online top down shooter for iOS and Android. This game combines battle royale with and top down shooter with some RPG elements to give you a complex experience that newer gets boring. Still in early stage of development."];
 
 var titleDetail;
 var textDetail;
@@ -75,7 +75,7 @@ function ImageReady() {
 }
 
 function OpenPrivacy() {
-    window.open("https://zomigames.com/"+pp+".html", '_blank');
+    window.open("https://zomigames.de/"+pp+".html", '_blank');
     
 }
 
