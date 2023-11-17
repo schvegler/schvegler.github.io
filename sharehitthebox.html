@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Other head elements -->
+  <title>Hit The Box</title>
+  <script>
+    // Check the user agent to determine the device and redirect accordingly
+    if ((navigator.userAgent.indexOf("iPhone") != -1) || 
+        (navigator.userAgent.indexOf("iPad") != -1) || 
+        (navigator.userAgent.indexOf("iPod") != -1)) {
+      window.location.href = 'itms-apps://apps.apple.com/1209115164';
+    } else if (navigator.userAgent.indexOf("Android") != -1) {
+      window.location.href = 'market://details?id=com.schvegler.hitthebox';
+    } else {
+      // Redirect for other devices or browsers if needed
+      window.location.href = 'https://zomigames.de'; // Your website URL as a fallback
+    }
+  </script>
+</head>
+<body>
+  <!-- Your website content -->
+
+  <!-- More website content -->
+</body>
+</html>
