@@ -23,7 +23,7 @@ var textDetail;
 
 document.addEventListener("DOMContentLoaded", function() {
     loader = document.getElementById('loading');
-    setTimeout(function() {loadNow(1);}, 8000);
+    setTimeout(function() {loadNow(1);}, 3000);
 
     anim = document.getElementsByClassName("anim");
     img = document.getElementsByClassName("img");
