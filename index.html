@@ -16,17 +16,18 @@
 
     <body>
         <div class="menu hidden">
-            <img src="TopMenu.png" onload="ImageReady()">
+            
             <div id="menu-list">
                 <div class="title">
-                <img src="ZomigamesTitle.png" onload="ImageReady()">
-            </div>
-            <div id="logo">
-                <img src="IconFlag.png" onload="ImageReady()">
-            </div>
-            <div id="download">
-                <img src="DownloadIcon.png" onload="ImageReady()">
-            </div>
+                    <img src="ZomigamesTitleLogo.png" onload="Ï">
+                    
+                </div>
+                <div id="logo">
+                    <img src="ZomiGamesLogoNoShadow.png" onload="ImageReady()">
+                 </div>
+                <div id="download">
+                    <img src="DownloadIcon.png" onload="ImageReady()">
+                </div>
             </div>
 
         </div>
@@ -122,26 +123,33 @@
             </div>
         </div>
 
-        <div class="main-container hidden">
+        <div class="main-container">
 
-        <div id="baby" class="baby">
-            <img src="BabyChicksImage.png" onload="ImageReady()">
-        </div>
-        <div id="snake" class="snake">
-            <img src="ClassicSnakeImage.png" onload="ImageReady()">
-        </div>
-        <div id="box" class="box">
-            <img src="HitTheBoxImage.png" onload="ImageReady()">
-        </div>
+            <div id="promo">
+                <video autoplay muted loop id="background-video">
+                <source src="snakevideo.mp4" type="video/mp4">
+                <!-- Add more <source> tags for different video formats -->
+                Your browser does not support the video tag.
+                </video>
+                <p class="text1">Welcome to ZomiGames, where passion meets pixels!</p>
+            </div>
+            <div id="baby" class="baby">
+                <p>Feathery Fury</p>
+            </div>
+            <div id="snake" class="snake">
+                <p>Snakr</p>
+            </div>
+            <div id="box" class="box">
+                <p>Box Blaster</p>
+            </div>
 
-    </div>
+        </div>
 
     </body>
 
 <footer class="hidden">
-    <img src="BottomMenu.png">
-    <p class="text1">Zomigames is a solo-dev game studio, creating fun and quality mobile games for iOS</p>
-    <p class="text2">Contact: tamas.schvegler@gmail.com</p>
+    <p class="text2">© 2023 Zomigames. All rights reserved. </p>
+    
     <script src="script.js"></script>
 </footer>
 
