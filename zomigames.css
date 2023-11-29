@@ -9,7 +9,9 @@
     background-size: 100px 90px !important;
 }
 
+
 body {
+    border: 0px;
     margin: auto;
     background-color: #2a2a2a;
 }
@@ -33,7 +35,6 @@ body {
     border: 0px;
     position: relative;
     width: 100%;
-    height: 500px;
 }
 
 #background-video {
@@ -45,14 +46,16 @@ body {
   object-fit: cover; /* Adjusts video size to cover the entire div */
 }
 
-#promo p{
-  position: absolute;
-   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: orange;
-  font-size: 24px; /* Adjust font size */
-  /* You can add more styles to customize the appearance */
+#welcomeImg{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(WelcomeImg.png);
+     background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    
 }
 
 #menu-list img {
@@ -80,9 +83,27 @@ body {
 
     margin: 5px;
     width: 100%;
-    height: 400px;
-    background-color: blak;
-    
+    height: 600px;
+    background-color: black;
+}
+
+.main-container div p {
+    margin-top: 540px;
+    text-align: right;
+    font-size: 40px;
+    margin-right: 15px;
+     font-family: Verdana, sans-serif; /* Ensure Verdana is the primary font choice */
+    font-weight: bold; /* Apply bold style */
+}
+
+@media (max-width: 896px) {
+    .main-container div {
+        height: 300px;
+    }
+    .main-container div p {
+        margin-top: 240px;
+        font-size: 25px;
+    }
 }
 
 #baby {
@@ -92,25 +113,11 @@ body {
     max-width: 1280px;
 }
 
-#baby p{
-    margin-top: 340px;
-    text-align: right;
-    font-size: 30px;
-    margin-right: 15px;
-}
-
 #snake{ 
 background-image: url(snake1.jpg);
     background-size: cover;
     background-position: center;
     max-width: 1280px;
-}
-
-#snake p{
-    margin-top: 340px;
-    text-align: right;
-    margin-right: 15px;
-    font-size: 30px;
 }
 
 
@@ -121,14 +128,6 @@ background-image: url(snake1.jpg);
     background-position: center;
     max-width: 1280px;
 }
-
-#box p{
-    margin-top: 340px;
-    text-align: right;
-    font-size: 30px;
-    margin-right: 15px;
-}
-
 
 .game-download{
     width: 90%;
