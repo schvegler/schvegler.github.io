@@ -14,8 +14,8 @@ var photosSnake = new Array();
 var photosBox = new Array();
 var photoGroup = [photosBaby, photosSnake, photosBox];
 var videos = [];
-var titles = ["Feathery Fury", "Classis Snake", "Hit The Box"];
-var descriptions = ["Fun games for children are a must, which is why Feathery Fury was created. Tilt your device to guide the chicken mom, blending excitement with classic 2D platformer gameplay. Your mission: collect all the adorable baby chicks and lead them back to the safety of your nest.", "Introducing Classic Snake: the beloved retro game revamped with stunning visuals, captivating effects, yet retaining its iconic gameplay mechanics.", "Woah, big news! Hit the Box 2.0 just dropped on iOS, and it's completely revamped with new graphics and fresh sounds. And the best part? It's free! Give it a whirl now and dive into the upgraded experience!", "The biggest project of Zomigames, an online top down shooter for iOS and Android. This game combines battle royale with and top down shooter with some RPG elements to give you a complex experience that newer gets boring. Still in early stage of development."];
+var titles = ["Feathery Fury", "Classis Snake", "Box Blaster"];
+var descriptions = ["Fun games for children are a must, which is why Feathery Fury was created. Tilt your device to guide the chicken mom, blending excitement with classic 2D platformer gameplay. Your mission: collect all the adorable baby chicks and lead them back to the safety of your nest.", "Introducing Classic Snake: the beloved retro game revamped with stunning visuals, captivating effects, yet retaining its iconic gameplay mechanics.", "📱 Dive into Box Blasters! 📦 Test your reflexes with endless tapping action. Collect coins, diamonds, and hearts while dodging bombs. Activate strategic power-ups for mega scores! Challenge yourself in this addictive tapping adventure!", "The biggest project of Zomigames, an online top down shooter for iOS and Android. This game combines battle royale with and top down shooter with some RPG elements to give you a complex experience that newer gets boring. Still in early stage of development."];
 
 var titleDetail;
 var textDetail;
